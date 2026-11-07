@@ -1,0 +1,34 @@
+name: Weekly lint
+
+on:
+  schedule:
+    - cron: "13 15 * * 1" # Mondays, 7:13 AM Pacific (standard time)
+  workflow_dispatch: {}
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+      id-token: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+
+      - name: Lint the wiki
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            Run the lint skill in skills/lint/SKILL.md on this repo, following CLAUDE.md.
+            If you change anything: create a branch named lint/<today's date>, commit, push it,
+            and open a pull request titled "Weekly lint: <date>" whose body is the lint report.
+            If nothing needs fixing, change nothing and print "Vault is clean."
+          claude_args: |
+            --max-turns 40
+            --allowedTools "Read,Write,Edit,Glob,Grep,Bash(rg:*),Bash(wc:*),Bash(ls:*),Bash(git:*),Bash(gh pr create:*)"

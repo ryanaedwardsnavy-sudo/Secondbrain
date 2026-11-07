@@ -21,3 +21,7 @@ The map of everything in the wiki. Every note gets a line here.
 ## Reference
 
 ## Inbox (unsorted)
+
+## Meta
+
+- [[log]]: running record of every ingest, lint, and filed answer

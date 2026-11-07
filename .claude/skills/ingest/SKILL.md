@@ -12,6 +12,7 @@ description: File a new source (URL, pasted text, transcript, screenshot) into r
    - No note exists: create `wiki/<topic>.md` from `templates/wiki-note.md`.
    - Contradicts an existing note: add it under `## Open questions` with both sources. Don't silently overwrite.
 4. **Link.** Add `[[wikilinks]]` between related notes, and add new notes to `wiki/index.md`.
-5. **Report.** List the raw file created and each wiki note created or updated, one line each.
+5. **Log.** Add an entry at the top of `wiki/log.md` (below the intro): date, `ingest`, the source title, the raw file, and the notes created or updated as `[[links]]`.
+6. **Report.** List the raw file created and each wiki note created or updated, one line each.
 
 Rules: never edit existing files in `raw/`. Paraphrase in wiki notes; quotes under 15 words.
