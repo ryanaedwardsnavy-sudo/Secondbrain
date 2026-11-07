@@ -1,0 +1,5 @@
+{
+  // Notes are prose: no hard wrap. Frontmatter `title` + an H1 is intentional.
+  "config": { "MD013": false, "MD025": false, "MD041": false },
+  "ignores": ["node_modules", "raw/**"]
+}

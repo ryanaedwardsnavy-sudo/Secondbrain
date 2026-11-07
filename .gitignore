@@ -1,0 +1,9 @@
+# Obsidian per-device state (keep the rest of .obsidian/ if you want shared settings)
+.obsidian/workspace*.json
+.obsidian/cache
+.trash/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.swp
