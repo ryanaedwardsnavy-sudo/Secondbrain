@@ -11,7 +11,7 @@ templates/
 
 ## Using it
 
-- **With Claude Code** (local or cloud): `/ingest <url or paste>` to file a source, `/compile <what you want>` to build something from the wiki. Rules live in `CLAUDE.md`.
+- **With Claude Code** (local or cloud): `/ingest <url or paste>` to file a source, `/compile <what you want>` to build something from the wiki. Rules live in `CLAUDE.md`. Skills live in `skills/` (also loadable as a Claude plugin via `.claude-plugin/plugin.json`).
 - **From your phone via GitHub:** open an issue like `@claude ingest https://…` (or paste the text, since X links usually can't be fetched). Claude opens a PR with the raw capture and the wiki updates. Review, then merge.
 - **In Obsidian:** browse, edit, and graph-view as normal. Commit when you're done.
 
