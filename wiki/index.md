@@ -15,3 +15,5 @@ The map of everything in the wiki. Every note gets a line here.
 ## Reference
 
 ## Inbox (unsorted)
+
+- [[ingest-pipeline-test]]: placeholder from the first ingest test (issue #1); safe to delete
