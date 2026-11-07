@@ -26,7 +26,7 @@ updated: 2026-11-07
 
 - It's the design basis for this second brain; useful when deciding how to evolve the vault.
 - This repo already maps onto it: `raw/` is layer 1, `wiki/` is layer 2, `CLAUDE.md` is layer 3, and `output/` adds a deliverables stage on top.
-- Gaps against the pattern: no `wiki/log.md`, no lint skill, and no habit yet of filing good answers back into the wiki. See [[llm-wiki-operations]].
+- The earlier gaps against the pattern are now closed: `wiki/log.md`, a `/lint` skill, and a rule for filing good answers back into the wiki. See [[llm-wiki-operations]].
 
 ## Related
 

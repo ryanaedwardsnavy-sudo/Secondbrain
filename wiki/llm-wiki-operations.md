@@ -23,9 +23,9 @@ updated: 2026-11-07
 
 ## How I'd use this
 
-- Ingest maps to `/ingest`, and query maps to the GitHub `ask` flow. Compiled answers go to `output/` today rather than back into `wiki/`.
-- Lint has no equivalent here yet. A `/lint` skill could check for orphans, unresolved `[[wikilinks]]`, notes over 400 words, and missing `## Sources`.
-- A `wiki/log.md` would give a running record of what each ingest touched.
+- Ingest maps to `/ingest`, and query maps to the GitHub `ask` flow. Deliverables go to `output/`, and answers that synthesize 2+ notes are also filed back into `wiki/`.
+- Lint maps to `/lint`, which checks for orphans, unresolved `[[wikilinks]]`, notes over 400 words, missing `## Sources`, and contradictions. It runs weekly on GitHub.
+- `wiki/log.md` keeps a running record of what each ingest, lint, and filed answer touched.
 
 ## Related
 
@@ -38,4 +38,4 @@ updated: 2026-11-07
 
 ## Open questions
 
-- In this repo, should good query answers be filed into `wiki/`, `output/`, or both?
+- Settled in `CLAUDE.md`: deliverables go to `output/`, and reusable answers that synthesize 2+ notes also go into `wiki/`.
