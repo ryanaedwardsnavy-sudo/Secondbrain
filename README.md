@@ -18,5 +18,6 @@ templates/
 ## Setup checklist
 
 - [ ] Add repo secret `ANTHROPIC_API_KEY` (or `CLAUDE_CODE_OAUTH_TOKEN`; see `.github/workflows/claude.yml`)
+- [ ] iPhone: see `docs/iphone-setup.md`
 - [ ] Cloud environment: copy settings from `docs/cloud-environment.md`
 - [ ] Install the Claude GitHub app on this repo: <https://github.com/apps/claude>
