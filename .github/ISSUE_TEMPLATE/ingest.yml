@@ -1,0 +1,28 @@
+name: Ingest a source
+description: Save an article, post, transcript, or screenshot to the second brain. Claude files it and replies with a PR link.
+title: "@claude ingest: "
+labels: ["ingest"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Paste whatever you've got. Claude saves it to `raw/`, folds it into `wiki/`, and comments with a **Create PR** link. Review, then merge.
+        X/Twitter links usually can't be fetched, so paste the text or attach a screenshot.
+  - type: input
+    id: url
+    attributes:
+      label: Link
+      description: Where it came from (optional if you paste the text)
+      placeholder: https://...
+  - type: textarea
+    id: content
+    attributes:
+      label: Content
+      description: Paste the text, or drag in screenshots
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why I'm saving this
+      description: Optional. One line on how you might use it; it goes into the wiki note

@@ -1,0 +1,12 @@
+name: Ask the second brain
+description: Ask a question or request a write-up built from your notes. Claude answers from the wiki (and can draft something into output/).
+title: "@claude "
+labels: ["ask"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: What do you want?
+      description: "Examples: \"What do I have on Claude Code plugins?\" or \"compile a one-page brief on setting up a second brain\""
+    validations:
+      required: true

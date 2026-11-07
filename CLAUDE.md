@@ -36,4 +36,8 @@ raw/  ──ingest──▶  wiki/  ──compile──▶  output/
 
 ## On GitHub (@claude)
 
-When mentioned in an issue or PR, follow these same rules. An issue containing a URL or pasted text with "ingest" means: run the ingest workflow and open a PR. Never push directly to `main`.
+When mentioned in an issue or PR, follow these same rules. Never push directly to `main`.
+
+- **Ingest** (title starts with `@claude ingest`, or the `ingest` label): run the `skills/ingest` workflow on the issue's Link, Content, and screenshots. Put the "Why I'm saving this" line, if any, under the note's `## How I'd use this`. Commit to the branch and reply with what was filed.
+- **Ask** (the `ask` label, or a question): answer in the reply from `wiki/` only, citing the notes as `wiki/<note>.md`. Say plainly when the wiki has nothing on it. If the request says compile, brief, write up, or draft, run `skills/compile` and commit the result to `output/`.
+- A Link you can't fetch (X/Twitter usually) is fine when the Content holds the text. If there's only a link and fetching fails, say so and ask for the text. Never invent content.
