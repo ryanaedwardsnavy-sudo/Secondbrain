@@ -1,7 +1,9 @@
 {
-  "name": "secondbrain",
+  "name": "ryan-secondbrain",
   "description": "Personal second brain: ingest sources into raw/, distill them into a linked wiki, and compile outputs from it.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": { "name": "Ryan Edwards" },
-  "repository": "https://github.com/ryanaedwardsnavy-sudo/secondbrain"
+  "license": "MIT",
+  "icon": ".claude-plugin/icon.png",
+  "repository": "https://github.com/ryanaedwardsnavy-sudo/Secondbrain"
 }
