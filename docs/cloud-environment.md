@@ -8,7 +8,7 @@ Paste this into the environment's **Setup script** field. It's safe to re-run.
 
 ```bash
 # Setup script for the Claude Code cloud environment (Secondbrain).
-# Paste into the environment's "Setup script" field, or run: bash scripts/setup-cloud-env.sh
+# Paste into the environment's "Setup script" field.
 # Idempotent and quiet: safe to re-run on every session start.
 set -euo pipefail
 
