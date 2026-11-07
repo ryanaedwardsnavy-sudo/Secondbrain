@@ -9,6 +9,14 @@ updated: 2026-11-07
 
 A running record of what each ingest, lint, and filed answer touched. Newest first. One entry per run.
 
+## 2026-11-07: lint
+
+- updated: [[llm-wiki-operations]] (How I'd use this no longer says lint, the log, and answer filing are missing)
+- updated: [[llm-wiki-operations]] (marked the open question on where to file answers as settled by `CLAUDE.md`)
+- updated: [[llm-wiki-pattern]] (gaps line now says the log, lint, and answer filing exist)
+- updated: [[index]] (added missing `tags`, `created`, and `updated` frontmatter)
+- gap: [[second-brain-method]], linked from [[anthropic-repos]] and [[llm-wiki-pattern]], no source in `raw/` yet
+
 ## 2026-11-07: lint (setup)
 
 - Log started. Earlier entries were backfilled from git history.
