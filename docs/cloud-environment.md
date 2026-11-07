@@ -1,4 +1,12 @@
-#!/usr/bin/env bash
+# Cloud environment
+
+Settings for the Claude Code cloud environment that works on this repo.
+
+## Setup script
+
+Paste this into the environment's **Setup script** field. It's safe to re-run.
+
+```bash
 # Setup script for the Claude Code cloud environment (Secondbrain).
 # Paste into the environment's "Setup script" field, or run: bash scripts/setup-cloud-env.sh
 # Idempotent and quiet: safe to re-run on every session start.
@@ -34,3 +42,18 @@ fi
 mkdir -p raw/{articles,threads,transcripts,docs} wiki output templates
 
 echo "secondbrain env ready: rg $(rg --version | head -1 | cut -d' ' -f2), jq $(jq --version 2>/dev/null)"
+```
+
+## Network access
+
+Default (package registries only). Nothing extra is needed: web fetching goes through Claude's tools, not the shell.
+
+## Variables
+
+| Name | Value | Why |
+| --- | --- | --- |
+| `TZ` | `America/Los_Angeles` | Dated filenames match your calendar |
+
+## Secrets
+
+None for the cloud environment. The GitHub workflow uses a **repo secret** instead: `ANTHROPIC_API_KEY` or `CLAUDE_CODE_OAUTH_TOKEN` (see `.github/workflows/claude.yml`).
